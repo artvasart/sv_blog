@@ -12,7 +12,7 @@
 </head>
 <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Bloger Name</a>
+      <%= link_to "Bloger Name", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", posts_path %>
         <a href="#">Projects</a>
@@ -20,7 +20,16 @@
       </nav>
     </header>
 
-<%= yield %>
+    <%= yield %>
+
+    <footer id="main_footer">
+      <p class="copyright">&copy;2015 Vafieva</p>
+      <nav>
+        <a href="#"><i class="fa fa-vk"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+      </nav>
+    </footer>
 
 </body>
 </html>
